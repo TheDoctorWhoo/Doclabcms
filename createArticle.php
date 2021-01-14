@@ -16,8 +16,6 @@ $valsNames .= isset($_POST['article']) ? "'".$_POST['article']."'," : "NULL,";
 $valsNames .= "now()";
 $formatedQuery = sprintf($query, $valsNames);
 $result = $db->query($formatedQuery);
-echo $formatedQuery;
-echo $result;
 ?>
 
 <!DOCTYPE html>
